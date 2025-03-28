@@ -52,11 +52,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   update() {
-    const { left, right, up, down } = this.cursor
+    const { left, right, up, down, space } = this.cursor
     let isIdle = true
 
     this.body.setVelocityX(0)
-    this.body.setVelocityY(0)
+    //this.body.setVelocityY(0)
 
     if (left.isDown) {
       this.body.setVelocityX(-this.speed)
@@ -69,8 +69,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       isIdle = false
     }
 
-    if (up.isDown) {
-      this.body.setVelocityY(-this.speed)
+    if (space.isDown) {
+      this.body.setVelocityY(-200)
       if (isIdle) this.anims.play("player_up", true)
       isIdle = false
     }
