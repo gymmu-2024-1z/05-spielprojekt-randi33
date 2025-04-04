@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="12">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="17">
  <editorsettings>
   <export target="../public/assets/maps/map-level-01.json" format="json"/>
  </editorsettings>
@@ -36,7 +36,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,2,2,2,1,1,1,1,1,1,1,1,0,0,1,1,
 0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,2,2,2,1,1,1,1,1,1,1,1,0,0,1,1,
 0,0,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,1,1,2,2,2,2,2,2,1,1,1,1,1,1,1,1,0,2,2,2,
-0,0,0,0,0,0,2,2,2,0,5,2,2,2,5,0,0,0,0,0,1,1,2,2,2,2,2,2,1,1,1,1,2,2,1,5,5,2,2,2,
+0,0,0,0,0,0,2,2,2,0,5,2,2,2,5,0,0,0,0,0,5,1,2,2,2,2,2,2,1,1,1,1,2,2,1,1,5,2,2,2,
 0,0,0,0,0,5,2,2,2,2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
@@ -67,12 +67,16 @@
   <object id="10" name="Mushroom" gid="3" x="547" y="448" width="32" height="32"/>
   <object id="11" name="Mushroom" gid="3" x="419" y="319" width="32" height="32"/>
  </objectgroup>
- <objectgroup id="5" name="Doors">
+ <objectgroup id="5" name="Doors" offsetx="-1" offsety="2">
   <object id="7" name="Cave" gid="7" x="1218" y="318" width="67" height="63">
    <properties>
     <property name="goToWorld" value="level-02"/>
     <property name="needKey" value="level-02"/>
    </properties>
   </object>
+  <object id="12" gid="7" x="1245" y="317" width="32" height="32"/>
+  <object id="13" gid="7" x="1642" y="444" width="32" height="32"/>
+  <object id="14" gid="7" x="1247" y="312" width="32" height="32"/>
+  <object id="16" gid="7" x="1222" y="315" width="32" height="32"/>
  </objectgroup>
 </map>
