@@ -5,7 +5,7 @@ export default class Mushroom extends StaticObject {
     super(scene, x, y, "pickups", "mushroom", properties)
 
     this.setOrigin(0, 0)
-    this.setSize(16, 16)
-    this.setOffset(16, 16)
+    this.setSize(32, 32)
+    this.setOffset(0, 0)
   }
 }

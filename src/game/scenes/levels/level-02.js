@@ -1,3 +1,4 @@
+import Mushroom from "../../gameObjects/pickups/mushroom"
 import Base2DScene from "../base-2d-scene"
 
 /**
@@ -18,5 +19,13 @@ export default class Level02 extends Base2DScene {
 
   create() {
     super.create("map-level-02")
+  }
+
+  pickUp(actor, item) {
+    super.pickUp(actor, item)
+
+    if (item instanceof Mushroom) {
+      this.scene.start("loading")
+    }
   }
 }
