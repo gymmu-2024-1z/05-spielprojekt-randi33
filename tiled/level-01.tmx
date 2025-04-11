@@ -46,32 +46,31 @@
   <object id="8" name="SpawnPlayer" x="192" y="288"/>
  </objectgroup>
  <objectgroup id="4" name="Items">
-  <object id="1" name="Mushroom" gid="3" x="834" y="254" width="32" height="32">
+  <object id="1" name="Flower" gid="3" x="834" y="254" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
     <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
-  <object id="2" name="Mushroom" gid="3" x="963" y="384" width="32" height="32">
+  <object id="2" name="Flower" gid="3" x="963" y="384" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
     <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
-  <object id="3" name="Mushroom" gid="3" x="671" y="383" width="32" height="32">
+  <object id="3" name="Flower" gid="3" x="671" y="383" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
     <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
-  <object id="10" name="Mushroom" gid="3" x="547" y="448" width="32" height="32"/>
-  <object id="11" name="Mushroom" gid="3" x="419" y="319" width="32" height="32"/>
+  <object id="10" name="Flower" gid="3" x="547" y="448" width="32" height="32"/>
+  <object id="11" name="Flower" gid="3" x="419" y="319" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors" offsetx="-1" offsety="2">
   <object id="7" name="Cave" gid="7" x="1218" y="318" width="67" height="63">
    <properties>
     <property name="goToWorld" value="level-02"/>
-    <property name="needKey" value="level-02"/>
    </properties>
   </object>
   <object id="12" gid="7" x="1245" y="317" width="32" height="32"/>

@@ -40,7 +40,7 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 2, 2, 2,
-            0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 5, 2, 2, 2, 5, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 1, 5, 5, 2, 2, 2,
+            0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 5, 2, 2, 2, 5, 0, 0, 0, 0, 0, 5, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 5, 2, 2, 2,
             0, 0, 0, 0, 0, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
             2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
             2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
@@ -85,7 +85,7 @@
                  "gid":3,
                  "height":32,
                  "id":1,
-                 "name":"Mushroom",
+                 "name":"Flower",
                  "properties":[
                         {
                          "name":"damageHp",
@@ -108,7 +108,7 @@
                  "gid":3,
                  "height":32,
                  "id":2,
-                 "name":"Mushroom",
+                 "name":"Flower",
                  "properties":[
                         {
                          "name":"damageHp",
@@ -131,7 +131,7 @@
                  "gid":3,
                  "height":32,
                  "id":3,
-                 "name":"Mushroom",
+                 "name":"Flower",
                  "properties":[
                         {
                          "name":"damageHp",
@@ -154,7 +154,7 @@
                  "gid":3,
                  "height":32,
                  "id":10,
-                 "name":"Mushroom",
+                 "name":"Flower",
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -166,7 +166,7 @@
                  "gid":3,
                  "height":32,
                  "id":11,
-                 "name":"Mushroom",
+                 "name":"Flower",
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -195,11 +195,6 @@
                          "name":"goToWorld",
                          "type":"string",
                          "value":"level-02"
-                        }, 
-                        {
-                         "name":"needKey",
-                         "type":"string",
-                         "value":"level-02"
                         }],
                  "rotation":0,
                  "type":"",
@@ -207,7 +202,57 @@
                  "width":67,
                  "x":1218,
                  "y":318
+                }, 
+                {
+                 "gid":7,
+                 "height":32,
+                 "id":12,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1245,
+                 "y":317
+                }, 
+                {
+                 "gid":7,
+                 "height":32,
+                 "id":13,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1642,
+                 "y":444
+                }, 
+                {
+                 "gid":7,
+                 "height":32,
+                 "id":14,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1247,
+                 "y":312
+                }, 
+                {
+                 "gid":7,
+                 "height":32,
+                 "id":16,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":1222,
+                 "y":315
                 }],
+         "offsetx":-1,
+         "offsety":2,
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -215,7 +260,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":12,
+ "nextobjectid":17,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
