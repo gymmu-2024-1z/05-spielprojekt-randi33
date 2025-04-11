@@ -66,12 +66,8 @@ export default class Level01 extends Base2DScene {
     if (item instanceof Flower) {
       // Das Objekt ist von der Klasse `Flower`
       this.player.addKey("level-02")
-      this.player.increaseSpeed(100)
-      this.player.heal(item.props.restoreHp || 0)
-    } else if (item instanceof Mushroom) {
-      // Das Objekt ist von der Klasse `Mushroom`
-      this.player.decreaseSpeed(100)
-      this.player.damage(item.props.damageHp || 0)
+      //this.player.increaseSpeed(100)
+      //this.player.heal(item.props.restoreHp || 0)
 
       // TODO: Aktivieren Sie das hier, wenn ein Effekt über eine gewisse Zeit
       // passieren soll.
@@ -92,6 +88,10 @@ export default class Level01 extends Base2DScene {
           this.player.rotation = 0
         },
       })
+    } else if (item instanceof Mushroom) {
+      // Das Objekt ist von der Klasse `Mushroom`
+      this.player.decreaseSpeed(100)
+      this.player.damage(item.props.damageHp || 0)
     }
   }
 }
