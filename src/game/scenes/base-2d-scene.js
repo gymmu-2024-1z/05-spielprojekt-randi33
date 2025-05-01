@@ -97,6 +97,36 @@ export default class Base2DScene extends Phaser.Scene {
     )
   }
 
+  // Die Funktion packt uns schön alles zusammen was mit dem erstellen von
+  // Animationen zu tun hat.
+  createAnimations() {
+    // Das erstellt uns eine Animation.
+    // um die Animation zu definieren.
+    this.anims.create({
+      key: "player_idle", // Das ist der Name der Animation, den brauchen wir.
+      frames: this.anims.generateFrameNumbers("player", {
+        // Hier geben wir an von welchem Spritesheet die Animation erstellt wird.
+        start: 1, // Bei welcher Kachel die Animation beginnt.
+        end: 1, // Bei welcher Kachel die Animation fertig ist.
+      }),
+      frameRate: 10, // Mit welcher Geschwindigkeit die Animation abläuft.
+      repeat: -1, // Wie oft die Animation wiederholt wird. Mit -1 läuft sie in einer Dauerschleife.
+    })
+
+    // Hier wird die Animation für das Rechtslaufen erstellt.
+    this.anims.create({
+      key: "player_right",
+      frames: this.anims.generateFrameNumbers("player", {
+        start: 6,
+        end: 8,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+
+    // TODO: Erstellen Sie die restlichen Animationen
+  }
+
   createMapObjects() {
     this.createObjects(this.map, "Items", "Mushroom", Mushroom, this.items)
     this.createObjects(this.map, "Items", "Flower", Flower, this.items)
