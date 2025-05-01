@@ -70,7 +70,7 @@
   <object id="16" name="Mushroom" gid="5" x="448.966" y="383.84" width="32" height="32"/>
   <object id="17" name="Mushroom" gid="5" x="351.84" y="447.902" width="32" height="32"/>
   <object id="18" name="Mushroom" gid="5" x="768.793" y="319.827" width="32" height="32"/>
-  <object id="19" name="Mushroom" gid="5" x="740.345" y="386.94" width="32" height="32"/>
+  <object id="19" name="Mushroom" gid="5" x="708.447" y="385.49" width="32" height="32"/>
   <object id="20" name="Mushroom" gid="5" x="994.526" y="383.84" width="32" height="32"/>
   <object id="21" name="Mushroom" gid="5" x="1091.65" y="320.811" width="32" height="32"/>
   <object id="22" name="Mushroom" gid="5" x="865.369" y="448.935" width="32" height="32"/>
