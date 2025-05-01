@@ -1,6 +1,8 @@
+import { Physics } from "phaser"
 import Flower from "../../gameObjects/pickups/flower"
 import Mushroom from "../../gameObjects/pickups/mushroom"
 import Base2DScene from "../base-2d-scene"
+import Player from "../../gameObjects/player/player"
 
 /**
  * Spiellogik für das Level01.
@@ -74,11 +76,12 @@ export default class Level01 extends Base2DScene {
       // Hier wird der Spieler halb so gross, und mit jedem Frame wird er wieder
       // normaler. Nach 3 Sekunden erreicht er seine normale Grösse.
       this.tweens.addCounter({
+        // Es wird eine Interaktion hinzufügt
         from: 0.5,
         to: 1,
         ease: "Linear",
         duration: 3000,
-        repeat: 0,
+        repeat: 0, // Wie oft es sich wiederholt
         onUpdate: (tween) => {
           const val = tween.getValue()
           this.player.setScale(val)
